@@ -7,8 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/commentlibrary/commentlibrary.iml" filepath="$PROJECT_DIR$/commentlibrary/commentlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/dblibrary/dblibrary.iml" filepath="$PROJECT_DIR$/dblibrary/dblibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/deviceinfolib/deviceinfolib.iml" filepath="$PROJECT_DIR$/deviceinfolib/deviceinfolib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/download/download.iml" filepath="$PROJECT_DIR$/download/download.iml" />
-      <module fileurl="file://$PROJECT_DIR$/network/network.iml" filepath="$PROJECT_DIR$/network/network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/downloadlibrary/downloadlibrary.iml" filepath="$PROJECT_DIR$/downloadlibrary/downloadlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/networklibrary/networklibrary.iml" filepath="$PROJECT_DIR$/networklibrary/networklibrary.iml" />
     </modules>
   </component>
 </project>

@@ -12,8 +12,8 @@
             <option value="$PROJECT_DIR$/commentlibrary" />
             <option value="$PROJECT_DIR$/dblibrary" />
             <option value="$PROJECT_DIR$/deviceinfolib" />
-            <option value="$PROJECT_DIR$/download" />
-            <option value="$PROJECT_DIR$/network" />
+            <option value="$PROJECT_DIR$/downloadlibrary" />
+            <option value="$PROJECT_DIR$/networklibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

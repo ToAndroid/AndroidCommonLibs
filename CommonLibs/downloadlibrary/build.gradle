@@ -29,7 +29,7 @@ uploadArchives {
         repository(url: "file://${mavenRepositoryPath.absolutePath}")
         pom.project {
             groupId "cn.andoop.android"
-            artifactId "download"
+            artifactId "downloadlib"
             version "1.0.0" }
     }
 }

@@ -1,0 +1,1 @@
+include ':app', ':deviceinfolib', ':dblibrary', ':commentlibrary', ':download', ':network'

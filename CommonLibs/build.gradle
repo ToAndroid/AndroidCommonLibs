@@ -15,6 +15,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven {
+            //指定maven仓库地址
+            url "https://raw.githubusercontent.com/andoop/AndroidCommonLibs/master"    }
     }
 }
 

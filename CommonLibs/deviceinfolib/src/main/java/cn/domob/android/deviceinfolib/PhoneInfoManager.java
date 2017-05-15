@@ -18,17 +18,17 @@ import android.util.Log;
      * @return
      */
     public  String getPhoneNumber(Context context){
-        TelephonyManager phoneManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-        try {
-            String line1Number = phoneManager.getLine1Number();
-            if(TextUtils.isEmpty(line1Number)){
-                return "";
-            }else {
-                return line1Number;
-            }
-        } catch (Exception e) {
-            Log.e("----->" + "PhoneInfoManager", "getPhoneNumber:" + e.toString());
-        }
+//        TelephonyManager phoneManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+//        try {
+//            String line1Number = phoneManager.getLine1Number();
+//            if(TextUtils.isEmpty(line1Number)){
+//                return "";
+//            }else {
+//                return line1Number;
+//            }
+//        } catch (Exception e) {
+//            Log.e("----->" + "PhoneInfoManager", "getPhoneNumber:" + e.toString());
+//        }
         return "";
     }
 

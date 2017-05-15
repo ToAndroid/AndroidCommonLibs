@@ -49,6 +49,6 @@ uploadArchives {
         pom.project {
             groupId "cn.andoop.android"
             artifactId "deviceinfo"
-            version "1.0.0" }
+            version "1.0.1" }
     }
 }

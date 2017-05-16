@@ -12,12 +12,19 @@ import android.os.Handler;
 public class InitAntiEmul {
     private int batteryV = 0;
     private double batteryT = 0;
+    private final BatteryBroadcastReceiver batteryBroadcastReceiver;
 
     public InitAntiEmul(Context context) {
-        BatteryBroadcastReceiver batteryBroadcastReceiver = new BatteryBroadcastReceiver();
+        batteryBroadcastReceiver = new BatteryBroadcastReceiver();
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("android.intent.action.BATTERY_CHANGED");
         context.registerReceiver(batteryBroadcastReceiver, intentFilter);
+    }
+
+    public void exit(Context context){
+        if(batteryBroadcastReceiver!=null){
+            context.unregisterReceiver(batteryBroadcastReceiver);
+        }
     }
 
     public void isEmulator(final callback callback) {

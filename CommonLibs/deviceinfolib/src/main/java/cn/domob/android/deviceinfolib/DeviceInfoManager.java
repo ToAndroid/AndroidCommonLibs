@@ -25,6 +25,7 @@ public class DeviceInfoManager {
     private PhoneInfoManager phoneInfoManager;
     //是否是模拟器
     private boolean isEmulator;
+    private InitAntiEmul initAntiEmul;
 
     private DeviceInfoManager(Context context) {
         this.context = context;
@@ -61,7 +62,7 @@ public class DeviceInfoManager {
         }
 
         //初始化模拟器检测
-        InitAntiEmul initAntiEmul = new InitAntiEmul(context);
+        initAntiEmul = new InitAntiEmul(context);
         initAntiEmul.isEmulator(new InitAntiEmul.callback() {
             @Override
             public void result(boolean b) {
@@ -73,6 +74,9 @@ public class DeviceInfoManager {
     public void onExit(){
         try {
             context.unregisterReceiver(batteryChangeReceiver);
+            if(initAntiEmul!=null){
+                initAntiEmul.exit(context);
+            }
         } catch (Exception e) {
             Log.e("----->" + "DeviceInfoManager", "onExit:" + e.toString());
         }

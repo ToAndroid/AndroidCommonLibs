@@ -78,7 +78,7 @@ public class DeviceInfoManager {
                 initAntiEmul.exit(context);
             }
         } catch (Exception e) {
-            Log.e("----->" + "DeviceInfoManager", "onExit:" + e.toString());
+            Log.w("----->" + "DeviceInfoManager", "onExit:" + e.toString());
         }
     }
 

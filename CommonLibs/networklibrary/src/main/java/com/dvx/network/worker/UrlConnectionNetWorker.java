@@ -148,6 +148,7 @@ public class UrlConnectionNetWorker implements INetWorker{
                     result="";
                     String str="";
                     while ((str=bufferedReader.readLine())!=null){
+                        Log.e("----->" + "NetWorker", "workOnPost:" + str);
                         result+=str;
                     }
                     break;
